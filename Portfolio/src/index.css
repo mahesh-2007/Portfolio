@@ -187,3 +187,65 @@ h2:hover::after {
 .resume-bottom h2:hover::after {
   width: 100%;
 }
+
+.sm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 10px 20px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+  font-size: 28px;
+  border: 3px solid #333;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sm:hover {
+  background-color: #333;      
+}
+
+.sm a{
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.sm:hover a,
+.sm:hover svg {
+  color: #fff !important;      
+  transition: color 0.3s;
+}
+.gh:hover,
+.ld:hover,
+.tw:hover,
+.is:hover,
+.fb:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s;
+  transform: translateY(-3px);
+}
+.Projects{
+  text-decoration: none;
+  color: #333;
+
+}
+.Projects-Head{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  position: relative;
+}
+.Projects-Head:hover::after {
+  width: 0 !important;
+  background: none !important;
+  transition: none !important;
+}
