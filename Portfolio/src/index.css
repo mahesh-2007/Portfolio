@@ -114,8 +114,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 20px;
+  padding: 12px;
   position: absolute;
   left: 25%;
   width: 50%;
@@ -173,6 +172,7 @@ h2:hover::after {
   text-align: center;
   line-height: 1.6;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .resume-bottom {
@@ -233,8 +233,7 @@ h2:hover::after {
 }
 .Projects{
   text-decoration: none;
-  color: #333;
-
+  color: inherit;
 }
 .Projects-Head{
   text-align: center;
@@ -249,3 +248,217 @@ h2:hover::after {
   background: none !important;
   transition: none !important;
 }
+.Projects-Head h2 {
+  font-size: 2rem;
+  position: relative;
+  transition: color 0.2s, transform 0.2s;
+}
+.Projects-Head ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.2s;
+
+
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;  
+  padding: 20px;
+  position: relative;
+  top: 0;            
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;           
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  width: 350px;             
+  max-width: 90vw;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.project-card img {
+  width:100%;
+  border-radius: 4px;
+  height: 200px;
+  border-bottom: #333;
+}
+.project-container :hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.project-card p{
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+.btn-pr {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;  }
+
+  .btn-pr a,
+.btn-pr svg {
+  color: #333; 
+  transition: color 0.2s;
+}
+
+.btn-pr a:hover,
+.btn-pr svg:hover {
+  color: #333; 
+  transition: color 0.2s;
+}
+.project-languages {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-languages span {
+  background: #333;
+  color: #fff;
+  border-radius: 12px;
+  padding: 3px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333 !important;   
+  fill: #333 !important;
+  stroke: #333 !important;
+  transition: color 0.2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #222 !important;   
+}
+.swiper-pagination {
+  display: none !important;
+}
+
+.skills-board {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: rgb(221, 208, 204);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(221, 208, 204);
+  border-radius: 12px;
+  padding: 18px 24px;
+  min-width: 110px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Icon color classes */
+.skill-icon.skill-react { color: #61DBFB; }
+.skill-icon.skill-js { color: #f7df1e; }
+.skill-icon.skill-html { color: #e34c26; }
+.skill-icon.skill-css { color: #2965f1; }
+.skill-icon.skill-git { color: #f34f29; }
+.skill-icon.skill-java { color: #007396; }
+.skills-center-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(221, 208, 204)
+}
+@media (max-width: 600px) {
+  .project-card {
+    width: 95vw;
+    min-width: 0;
+    max-width: 100vw;
+    padding-right: 20px;
+  }
+  .project-card img {
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+  }
+  .sm{
+  margin: 5px;
+  
+  }
+  .skill-name{
+    margin-right: 2%
+  }
+}
+
+
+.skills-name {
+  color: #333;
+  margin:40px;
+}
+.skillarr{
+position: relative;
+bottom: 120px;
+}
+

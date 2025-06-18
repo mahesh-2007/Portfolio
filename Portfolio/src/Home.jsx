@@ -1,10 +1,11 @@
 import photo from './assets/ICON.PNG'
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
 import resume from './assets/resume.pdf';
 import logo from './assets/logo.png';
 import { FaGithub , FaLinkedin , FaInstagram , FaFacebookF  } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Project from './Project';
+
 
 function Home() {
   return (
@@ -51,7 +52,9 @@ function Home() {
             </div>
           </div>
           <div className="header-right">
-            <h2>Skills</h2>
+            <Link to="/Skills">
+            <h2 className='skills-name'>Skills</h2>
+            </Link>
            <Link to="/Project" className='Projects'>
             <h2 style={{ marginRight:'30px', marginBottom:'45px' }}>Projects</h2>
           </Link>

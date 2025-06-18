@@ -4,6 +4,7 @@ import './index.css'
 import Home from './Home'
 import About from './about'
 import Project from './Project'
+import Skills from './Skills'
 import { BrowserRouter , createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   },{
     path: "/Project",
     element: <Project />,
+  },
+  {
+    path: "/Skills",
+    element: <Skills />,
   }
 ])
 createRoot(document.getElementById('root')).render(
