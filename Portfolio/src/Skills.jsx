@@ -22,7 +22,6 @@ const skills = [
 
 function Skills() {
   return (
-  <>
     <div className="skills-center-container">
       <div className="skills-board">
         <h2 className="skills-title">My Skills</h2>
@@ -34,15 +33,13 @@ function Skills() {
             </div>
           ))}
         </div>
+        <div className="skillarr">
+          <Link to="/" className="back-link">
+            <FaArrowCircleLeft className="arr" />
+          </Link>
+        </div>
       </div>
-       
     </div>
-    <div className="skillarr">
-    <Link to="/" className="back-link">
-      <FaArrowCircleLeft className="arr" />
-      </Link>
-      </div>
-</>
   );
 }
 

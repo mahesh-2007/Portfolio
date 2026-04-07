@@ -36,7 +36,7 @@ function Home() {
             <div className="sm">
               <a href='https://github.com/mahesh-2007'><FaGithub className='gh'/></a>
               <a href="https://www.linkedin.com/in/mahesh23507/"> <FaLinkedin className='ld' /></a>
-              <a href='https://www.instagram.com/x_x_madzzz_x_x/?igsh=MWVuM2N4emcwbzB1OA%3D%3D'><FaInstagram className='is' /></a>
+              <a href='https://www.instagram.com/ft_madzzz/?igsh=MWVuM2N4emcwbzB1OA%3D%3D'><FaInstagram className='is' /></a>
               <a href='https://x.com/Mahesh15747922'><FaXTwitter className='tw'/></a>
             </div>
             </div>
@@ -52,7 +52,7 @@ function Home() {
             </div>
           </div>
           <div className="header-right">
-            <Link to="/Skills">
+            <Link to="/Skills" className="Projects">
             <h2 className='skills-name'>Skills</h2>
             </Link>
            <Link to="/Project" className='Projects'>

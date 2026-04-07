@@ -32,16 +32,16 @@ const projects = [
     image: todo,
     description: "A simple To-Do List application built with HTML, CSS, and JavaScript.",
     languages: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Mahesh-2007/NOTES/",
-    live: "https://mahesh-2007.github.io/NOTES/"
+    github: "https://github.com/Mahesh-2007/TODOLIST-JS/",
+    live: "https://github.com/Mahesh-2007/TODOLIST-JS/"
   },
   {
      title: "Notes",
     image: notes,
     description: "A simple Notes List application built with HTML, CSS, and JavaScript.",
     languages: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Mahesh-2007/TODOLIST-JS/",
-    live: "https://mahesh-2007.github.io/TODOLIST-JS/"
+    github: "https://mahesh-2007.github.io/NOTES/",
+    live: "https://mahesh-2007.github.io/NOTES/"
   },
 ];
 

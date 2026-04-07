@@ -118,6 +118,7 @@ body {
   position: absolute;
   left: 25%;
   width: 50%;
+  padding-top: 150px;
 }
 .underline {
   width: 80px;
@@ -134,7 +135,7 @@ body {
   align-items: center;
   height: 50px;
   position: relative;
-  top: 30px;
+  top: 110px;
   color: #272626;
 }
 
@@ -451,14 +452,12 @@ h2:hover::after {
     margin-right: 2%
   }
 }
-
-
 .skills-name {
   color: #333;
   margin:40px;
 }
 .skillarr{
 position: relative;
-bottom: 120px;
+  top: 10%;
+  margin-bottom: 10px;
 }
-

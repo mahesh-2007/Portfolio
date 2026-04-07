@@ -15,7 +15,7 @@ function Project() {
       </div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]} // 2. Include Autoplay
-        spaceBetween={10}
+        spaceBetween={50}
         loop={true}
         slidesPerView="auto"
         centeredSlides={true}
