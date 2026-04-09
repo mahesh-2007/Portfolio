@@ -1,7 +1,7 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt , FaArrowCircleLeft} from "react-icons/fa";
+import { FaPython, FaHtml5, FaCss3Alt, FaJs, FaGitAlt , FaArrowCircleLeft} from "react-icons/fa";
 import { Link } from "react-router-dom";
 const skills = [
-  { name: "React", icon: <FaReact />, className: "skill-react" },
+  
   {
     name: "Java",
     icon: (
@@ -13,6 +13,7 @@ const skills = [
     ),
     className: "skill-java",
   },
+  { name: "Python", icon: <FaPython />, className: "skill-python" },
   { name: "JavaScript", icon: <FaJs />, className: "skill-js" },
   { name: "HTML5", icon: <FaHtml5 />, className: "skill-html" },
   { name: "CSS3", icon: <FaCss3Alt />, className: "skill-css" },
